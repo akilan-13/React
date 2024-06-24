@@ -1,0 +1,223 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+.header{
+  position: relative;
+}
+.App .bar{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 30px;
+}
+.search{
+  outline: none;
+  display: flex;
+  justify-content:end ;
+}
+.sorting{
+  margin-right: 30px;
+}
+.sort{
+  font-size: 10px;
+  white-space: nowrap;
+  float: right;
+  margin-right: 10px;
+}
+.App{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.App .main{
+  width: 100%;
+  flex-grow: 1;
+}
+.sidepanel{
+  width: 15%;
+  margin: 0;
+}
+
+.pg{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  overflow: hidden;
+}
+.logout{
+  cursor: pointer;
+  color: #000000c9;
+}
+.logout:hover{
+  color: black;
+}
+
+.success-box{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display:flex ;
+  place-content: center;
+  place-items: center;
+}
+.success-box .box-container{
+  position: relative;
+  background-color: white;
+  padding: 50px;
+  width: 400px;
+  
+}
+.success-box .tick-icon{
+  background-color: rgb(31, 182, 31);
+  display: flex;
+  width: fit-content;
+  scale: 1;
+animation: animateIcon .75s linear .5s infinite;
+}
+.success-box .box-container .close{
+  position: absolute;
+  color: #404040;
+  top: 5px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.success-box .box-container .close:hover{
+  color: black;
+
+}
+.icon{
+  cursor: pointer;
+}
+.sortIcon{
+  cursor: pointer;
+}
+@keyframes animateIcon{
+  0%{
+      transform: scale(1);
+  }
+  50%{
+      transform: scale(1.15);
+  }
+  100%{
+      transform: scale(1);
+  }
+
+}
+
+
+.content{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 201, 139);
+}
+
+.ismodal{
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.4) ;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.ismodal .container{
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+}
+.ismodal .container span{
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+.ismodal .container span:hover{
+  color: red;
+}
+.ismodal .container input{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  outline: none;
+}
+.ismodal .container button{
+  float:right;
+}
+.loading img{
+  width: 100px;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ top: 35%;
+ background: transparent;
+}
+.currentpg,.currentpg:hover{
+  background-color: #0000ff;
+  color:#ffff;
+  cursor: pointer;
+}
+.pg:hover{
+  cursor: pointer;
+  background-color: #ccc;
+}
+.delete{
+  position: absolute;
+  z-index: 9999;
+  top: -999px;
+ left: 50%;
+ transform: translateX(-50%);
+ transition: all .5S ease;
+}
+.confirm{
+  top: 10px;
+
+}
+
+.toolbar{
+  position: relative;
+}
+.addbtn{
+  position: relative;
+  display: flex;
+  padding-left: 15px;
+  padding-left: 15px;
+  min-height: 15px;
+}
+.pager .toolbar{
+  position:absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+.userImage{
+  width: 100px;
+  height:100px;
+  border-radius: 20px;
+
+}
+
+.employee select:focus{
+  outline: none;
+}
+
+

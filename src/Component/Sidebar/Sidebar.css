@@ -1,0 +1,14 @@
+.sidebar{
+    width:100%;
+   height: 100%;
+
+   background-image: linear-gradient( 135deg, #FA742B 40%,#FFE985 100%);
+  }
+  
+  .sidebar .link:hover{
+    background-color: rgb(255, 199, 96);
+  }
+ .sidebar .link.active{
+    background-color: rgb(255, 213, 135);
+ }
+
